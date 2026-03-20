@@ -1,0 +1,13 @@
+{
+  "routes": [
+    {
+      "src": "/bypass",
+      "dest": "/api/bypass.js"
+    }
+  ],
+  "functions": {
+    "api/*.js": {
+      "maxDuration": 60
+    }
+  }
+}
