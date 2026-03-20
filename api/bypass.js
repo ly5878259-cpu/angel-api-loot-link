@@ -79,7 +79,7 @@ export default async function handler(req, res) {
     }
 
     // 🔥 click HI once
-    let hi = await page.$x(`//*[contains(text(), "HI")]`);
+    let hi = await page.$x(`//*[contains(text(), "UNLOCK CONTENT")]`);
     if (hi.length) {
       try {
         await hi[0].click();
@@ -89,7 +89,7 @@ export default async function handler(req, res) {
 
     // 🔁 loop HI every 4s
     for (let i = 0; i < 8; i++) {
-      hi = await page.$x(`//*[contains(text(), "HI")]`);
+      hi = await page.$x(`//*[contains(text(), "UNLOCK CONTENT")]`);
 
       if (hi.length) {
         try {
